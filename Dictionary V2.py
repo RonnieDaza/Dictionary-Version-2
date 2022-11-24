@@ -32,6 +32,8 @@ while True:
 
         print("Saved!")
 
+        dict_store[fullName] = userInfo
+
     elif choice == 2:
         fullName_other = input("Enter your full name: ")
         if fullName_other in dict_store:

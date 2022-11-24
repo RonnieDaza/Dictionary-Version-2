@@ -5,7 +5,7 @@ print("2 -> Search")
 print("3 -> Exit (y/n)")
 print("-----------------------------")
 
-dict_info =  {"Mark": ["19", "Manila", "09123456789"]}
+dict_store =  {"Mark": ["19", "Manila", "09123456789"]}
 
 while True:
 
@@ -20,7 +20,7 @@ while True:
         gender = input("Gender: ")
         email = input("Email: ")
         
-        userInfo = {
+        dataOfUser = {
             "Full Name": fullName,
             "Age": age,
             "Address": address,
@@ -29,5 +29,12 @@ while True:
             "Gender": gender,
             "email": email,
         }
-        
+
         print("Saved!")
+
+    elif choice == 2:
+        fullName_other = input("Enter your full name: ")
+        if fullName_other in dict_store:
+            searchForData = dict_store[fullName_other]
+            for key, value in searchForData.items():
+                print(key, ":", value)

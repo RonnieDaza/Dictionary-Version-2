@@ -38,3 +38,8 @@ while True:
             searchForData = dict_store[fullName_other]
             for key, value in searchForData.items():
                 print(key, ":", value)
+    
+    elif choice == 3:
+        exit = input("Are you sure? (Yes/No) ")
+        if exit == "Yes":
+            break

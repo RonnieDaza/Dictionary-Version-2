@@ -5,7 +5,7 @@ print("2 -> Search")
 print("3 -> Exit (y/n)")
 print("-----------------------------")
 
-dict_store =  {"Mark": ["19", "Manila", "09123456789"]}
+dict_store =  {}
 
 while True:
 
@@ -32,7 +32,7 @@ while True:
 
         print("Saved!")
 
-        dict_store[fullName] = userInfo
+        dict_store[fullName] = dataOfUser
 
     elif choice == 2:
         fullName_other = input("Enter your full name: ")
